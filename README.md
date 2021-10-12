@@ -1,12 +1,12 @@
 # PERIPLE
 AI project for Hanyang university students
 
-Group Members :
-Aurélien POUXVIEL, ESILV - France, aurelien.pouxviel@edu.devinci.fr
-Tristan d'ANTIN, ESILV - France, tristandantin@gmail.com
-Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr
-Alexandre MORLAT, ESILV - France, 
-Henri ELOY, ESILV - France, henri.eloy@edu.devinci.fr
+Group Members :  
+Aurélien POUXVIEL, ESILV - France, aurelien.pouxviel@edu.devinci.fr  
+Tristan d'ANTIN, ESILV - France, tristandantin@gmail.com  
+Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr  
+Alexandre MORLAT, ESILV - France,   
+Henri ELOY, ESILV - France, henri.eloy@edu.devinci.fr  
 
 Title : PERIPLE
 
