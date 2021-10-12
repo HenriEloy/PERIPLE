@@ -8,6 +8,11 @@ Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr
 Alexandre MORLAT, ESILV - France, 
 Henri ELOY, ESILV - France, henri.eloy@edu.devinci.fr
 
+Title : PERIPLE
+
+Proposal : 
+
+OPTION A
 
 PERIPLE is an idea of startup we want to create, this is the project :
 It is a full personalized program which use machine learning and the choices from the user to create a perfect trip.
