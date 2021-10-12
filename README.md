@@ -5,7 +5,7 @@ Group Members :
 Aurélien POUXVIEL, ESILV - France, aurelien.pouxviel@edu.devinci.fr  
 Tristan d'ANTIN, ESILV - France, tristandantin@gmail.com  
 Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr  
-Alexandre MORLAT, ESILV - France,   
+Alexandre MORLAT, ESILV - France, alexandre.morlat@edu.devinci.fr
 Henri ELOY, ESILV - France, henri.eloy@edu.devinci.fr  
 
 
