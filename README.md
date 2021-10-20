@@ -25,5 +25,5 @@ So the database will be unique for every user, gathering the database from inter
 When starting the app, the user has to give his budget and time limits. Then he has to make several ratings (ex: rate 1 out of 5 "Monuments" and 3 out of 5 for "Restauration").   
 At the end we will adapt the database as I said before and propose a final guide based on all of that.  
 
-We're sorry if it isn't clear, we'll be really happy to discuss it with you.
+We're sorry if it isn't clear, we'll be really happy to discuss it with you.  
 
