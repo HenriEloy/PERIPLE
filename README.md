@@ -21,7 +21,7 @@ It is a full personalized program which use machine learning and the choices fro
 We take in count activities rates from internet, but mainly rates, budget, timing given by the user.  
 With that we are creating a perfect ordoned list of activities for the user and then propose an actual guide to him.  
 We want to use datebases from internet, but we will complete and compare it with the rates of all our users.  
-So the database will be unique for every user, gathering the database from internet, the database changed by the choices of all users (machine learning) and then the database from the answers the user give.  
+So the database will be unique for every user, gathering the database from internet, the database changed by the choices of all users (machine learning) and then the database from the answers the user gave.  
 When starting the app, the user has to give his budget and time limits. Then he has to make several ratings (ex: rate 1 out of 5 "Monuments" and 3 out of 5 for "Restauration").   
 At the end we will adapt the database as I said before and propose a final guide based on all of that.  
 
