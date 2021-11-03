@@ -1,12 +1,12 @@
-id;name;OriginalGrade;Iagrade;FinalGrade
-0;Eiffel;9;-40.0;9.11
-1;Elysée;8;-24.0;8.25
-2;Triomphe;8;10.0;8.52
-3;Luxembourg;7;-54.0;7.0
-4;Fouquets;7;-30.0;7.2
-5;MontMartre;6;6.0;6.49
-6;NotreDame;6;10.0;6.52
-7;Aquaboulevard;5;24.0;5.64
-8;Rex club;4;68.0;5.0
-9;Mcdo;4;-24.0;4.25
-10;KFC;3;-2.0;3.43
+id;name;OriginalGrade;Iagrade;FinalGrade;Price€;Location;TimeH;Type 1;Type 2;Type 3;Type 4
+1;Champs Elysée;8;34;13.0;0;coordinates;1,5;Visit;Monument;Unmissable;Outside
+0;Eiffel;9;-12;10.35;20;coordinates;1,5;Visit;Monument;Unmissable;Outside
+2;Triomphe;8;-2;10.14;15;coordinates;0,5;Visit;Monument;Unmissable;Outside
+3;Luxembourg;7;5;9.7;0;coordinates;1;Visit;Monument;Outside;0
+6;NotreDame;6;6;8.78;0;coordinates;0,5;Visit;Monument;Unmissable;Religious
+5;MontMartre;6;2;8.46;0;coordinates;1,5;Visit;Monument;Unmissable;Outside
+8;Rex club;4;12;7.25;15;coordinates;3;NightLife;Club;0;0
+4;Fouquets;7;-29;7.0;70;coordinates;0,75;Catering;Gastronomic;0;0
+7;Aquaboulevard;5;-15;6.11;25;coordinates;6;Activity;Sport;Family;0
+9;Mcdo;4;-10;5.51;10;coordinates;0,3;Catering;Fast Food;0;0
+10;KFC;3;-20;3.71;10;coordinates;0,3;Catering;Fast Food;0;0
