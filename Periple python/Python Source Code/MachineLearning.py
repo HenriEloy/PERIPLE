@@ -1,7 +1,7 @@
 import pandas as pd
 
-WayToActivities = "../Databases/activities.csv"
-WayToOpinions = "../Databases/opinions.csv"
+WayToActivities = "../DataBases/activities.csv"
+WayToOpinions = "../DataBases/opinions.csv"
 
 #creation of Activities dataframe, encoded for french characters, with 0 when no values given
 dfActivities = pd.read_csv(WayToActivities, sep=';', encoding='latin1').fillna(0)
@@ -9,9 +9,7 @@ dfOpinions = pd.read_csv(WayToOpinions, sep=';') #creation of opinions dataframe
 
 #dfActivities['FinalGrade'] = pd.to_numeric(dfActivities['FinalGrade'], downcast='float') #Set the FinalGrade column to float
 
-coeff = 1 #percentage of importance of the IA grades
-
-print(dfActivities)
+coeff = 5 #importance of the IA grades
 
 for i in dfOpinions.index : #Going through the new opinions
     idActi = dfOpinions['id activity'][i] #Getting the id of the activity rated
@@ -42,6 +40,9 @@ for i in dfActivities.index :
     Fgrade = dfActivities['OriginalGrade'][i] + IAgradeCoeff #Sum of the original grade (from internet) with the new IA one
     dfActivities['FinalGrade'][i] = round(Fgrade,2) #Writing of the final grade in the database
 
-print(dfActivities)
 #Replacing csv by the modified dataframe, using ';' as separator and encoding for french characters
+dfActivities.sort_values(by = 'FinalGrade')
+
+print(dfActivities)
+
 dfActivities.to_csv(WayToActivities, index=False, sep=';', encoding='latin1')
