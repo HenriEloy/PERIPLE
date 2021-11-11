@@ -1,0 +1,25 @@
+id;name;OriginalGrade;Iagrade;FinalGrade;Price€;Location;TimeH;Unmissable;Type 1;Type 2;Type 3;Type 4;gradeDone;gradeChoice;totalGrade
+18;Pyramide du Louvre;4.7;19.0;9.28;15;Louvres. Paris. France;1.0;0;Visit;Museum;Historical;0;4.38;2.0;15.66
+3;Jardin du Luxembourg;4.7;11.0;8.17;0;75006 Paris. France;2.0;0;Visit;Walk;Nature;0;3.12;3.67;14.96
+6;NotreDame;4.7;-2.0;6.37;0; 6 Parvis Notre-Dame - Pl. Jean-Paul II. 75004 Paris. France;0.5;1;Visit;Monument;0;0;4.38;3.5;14.25
+0;Eiffel;4.6;22.0;9.6;0;Champ de Mars. 5 Av. Anatole France. 75007 Paris. France;1.0;1;Visit;Monument;Exterior;0;0.0;3.67;13.27
+14;Musée national d'Histoire naturelle;4.5;16.0;8.67;10; 57 Rue Cuvier. 75005 Paris. France;2.0;1;Visit;Museum;Historical;0;2.5;2.0;13.17
+1;Champs Elysée;4.6;3.0;6.96;0;"Champs-Élysées; Faubourg-du-Roule";1.5;1;Visit;Walk;Urban;0;2.5;3.67;13.13
+13;Canal Saint-Martin;4.3;-10.0;4.86;0;Canal Saint-Martin;1.0;0;Visit;Walk;Nature;0;3.75;3.67;12.28
+17;Cimetière du Père Lachaise;4.6;-4.0;5.99;0;16 Rue du Repos. 75020 Paris. France;1.0;0;Visit;Monument;Exterior;0;2.5;3.67;12.16
+11;Musée Grévin;4.4;5.0;7.04;25;10 Bd Montmartre. 75009 Paris. France;1.0;0;Visit;Museum;Modern;0;3.12;2.0;12.16
+9;McDonald's Porte de Vincennes;3.3;22.0;8.3;10;111 Cr de Vincennes. 75020 Paris. France;0.5;0;Catering;Fast Food;0;0;0.0;3.5;11.8
+2;Triomphe;4.7;9.0;7.89;0;Pl. Charles de Gaulle. 75008 Paris. France;0.33;1;Visit;Monument;Exterior;0;0.0;3.67;11.56
+19;Le SPA Dans Le Noir;4.5;2.0;6.72;50;65 Rue Montmartre. 75002 Paris. France;1.0;0;Activity;Relaxation;0;0;3.75;1.0;11.47
+4;Fouquets;4.0;9.0;7.19;120;99 Av. des Champs-Élysées. 75008 Paris. France;0.75;0;Catering;Gastronomic;Global;0;1.25;3.0;11.44
+20;Parc Zoologique de Paris;4.2;16.0;8.37;20;Av. Daumesnil. 75012 Paris. France;2.0;0;Activity;Fun;0;0;1.88;1.0;11.25
+12;Palais de Tokyo;4.4;6.0;7.18;10;13 Av. du Président Wilson. 75116 Paris. France;1.0;0;Visit;Museum;Modern;0;1.88;2.0;11.06
+5;MontMartre;4.6;-1.0;6.41;0;18e arrondissement;1.5;0;Visit;Monument;Exterior;Interior;0.62;4.0;11.03
+10;KFC Paris Les Halles;3.4;-5.0;4.65;10;31-35 Bd de Sébastopol. 75001 Paris. France;0.5;0;Catering;Fast Food;0;0;2.5;3.5;10.65
+8;Rex club;3.9;11.0;7.37;15;5 Bd Poissonnière. 75002 Paris. France;3.0;0;NightLife;Club;0;0;2.5;0.0;9.87
+15;Le grand Rex;4.5;-9.0;5.19;12;1 Bd Poissonnière. 75002 Paris. France;2.0;0;Activity;Show;Cinema;0;3.12;0.67;8.98
+16;Parc des princes;4.6;4.0;7.1;100;24 Rue du Commandant Guilbaud. 75016 Paris. France;2.0;0;Activity;Sport;Watch;0;0.0;0.67;7.77
+21;Théâtre de Paris;4.3;-1.0;6.11;15;15 Rue Blanche. 75009 Paris. France;2.0;0;Activity;Show;Theater;0;0.62;0.67;7.4
+7;Aquaboulevard;3.0;-14.0;3.0;35;4-6 Rue Louis Armand. 75015 Paris. France;3.0;0;Activity;Fun;0;0;2.5;1.0;6.5
+22;Serpent A Plume;4.2;1.0;6.28;10;24 Pl. des Vosges. 75003 Paris. France;1.0;0;NightLife;Bar;0;0;0.0;0.0;6.28
+23;Piscine Alfred Nakache;3.7;-8.0;4.53;3,5;4-12 Rue Denoyez. 75020 Paris;2.0;0;Activity;Sport;Practice;Fun;0.62;0.5;5.65

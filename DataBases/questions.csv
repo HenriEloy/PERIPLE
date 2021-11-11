@@ -1,0 +1,32 @@
+﻿id;question;link
+0;Visit;NAN
+1;Museum;Visit
+2;Historical;Museum
+3;Modern;Museum
+4;Monument;Visit
+5;Exterior;Monument
+6;Interior;Monument
+7;Walk;Visit
+8;Nature;Walk
+9;Urban;Walk
+10;Catering;NAN
+11;Gastronomic;Catering
+12;Gastronomic local;Gastronomic
+13;Gastronomique Global;Gastronomic
+14;Casual;Catering
+15;Casual Local;Casual
+16;Global;Casual
+17;Fast Food;Catering
+18;Original;Catering
+19;Activity;NAN
+20;Sport;Activity
+21;Practice;Sport
+22;Watch;Sport
+23;Fun;Activity
+24;Relaxation;Activity
+25;Show;Activity
+26;Theater;Show
+27;Cinema;Show
+28;Night Life;NAN
+29;Club;Night Life
+30;Bar;Night Life
