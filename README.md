@@ -8,10 +8,6 @@ Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr
 Alexandre MORLAT, ESILV - France, alexandre.morlat@edu.devinci.fr  
 Henri ELOY, ESILV - France, henri.eloy@edu.devinci.fr  
 
-
-
-Title : PERIPLE
-
 Proposal : 
 
 OPTION A
@@ -27,3 +23,21 @@ At the end we will adapt the database as I said before and propose a final guide
 
 We're sorry if it isn't clear, we'll be really happy to discuss it with you.  
 
+I- Introduction
+  1. Motivation
+  2. Purpose
+
+II- Datasets
+  1. Describtion
+
+III- Methodology
+  1. Explication of our algorithms
+  2. Explication of features or code
+
+IV- Evaluation and Analysis
+  1. Graphs, Tables or statistics
+
+V- Related Work
+  1. Tools, library or doc for this project
+
+VI- Conclusion/Discussion
