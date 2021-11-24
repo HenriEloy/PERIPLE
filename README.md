@@ -1,7 +1,7 @@
-# PERIPLE
+# PERIPLE :world_map:
 AI project for Hanyang university students
 
-Group Members :  
+###### Group Members :  
 Aurélien POUXVIEL, ESILV - France, aurelien.pouxviel@edu.devinci.fr  
 Tristan d'ANTIN, ESILV - France, tristandantin@gmail.com  
 Samuel PARIENTE, ESILV - France, samuel.pariente@edu.devinci.fr  
@@ -23,21 +23,22 @@ At the end we will adapt the database as I said before and propose a final guide
 
 We're sorry if it isn't clear, we'll be really happy to discuss it with you.  
 
-I- Introduction
-  1. Motivation
-  2. Purpose
+## I- Introduction
+  ###### 1. Motivation
+  Periple is an idea of a startup we want to create. ...
+  ###### 2. Purpose
 
-II- Datasets
-  1. Describtion
+## II- Datasets
+  ###### Describtion
 
-III- Methodology
-  1. Explication of our algorithms
-  2. Explication of features or code
+## III- Methodology
+  ###### 1. Explication of our algorithms
+  ###### 2. Explication of features or code
 
-IV- Evaluation and Analysis
-  1. Graphs, Tables or statistics
+## IV- Evaluation and Analysis
+  ###### Graphs, Tables or statistics
 
-V- Related Work
-  1. Tools, library or doc for this project
+## V- Related Work
+  ###### Tools, library or doc for this project
 
-VI- Conclusion/Discussion
+## VI- Conclusion/Discussion
