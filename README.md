@@ -99,7 +99,15 @@ At the end we have 763 establishments of 20 different types associated with an i
   I will start by describing what a lambda user will see when opening our IA app, and then explain how we computed everything to find the perfect activities for him.
   
   First, we ask the user to create an account because we want to save some data that he will give us and use it only for this person.
-  Once he is connected, we present him several 'types' of activities, and ask him to give a grade out of 5 for each of those types. It's good to know that types are sorted and organized in a tree, starting with main types (such as 'Visit' or 'Catering') in which there are more focused types (such as 'museums', then 'historical', etc.). You can see those trees just here: 
+  
+  ![image](https://user-images.githubusercontent.com/75729292/144030209-4e92dacd-49e6-480f-a524-d314505649c4.png)
+  ![image](https://user-images.githubusercontent.com/75729292/144030428-281f1a1b-4ee4-4e00-b619-7e5ec359ee70.png)
+
+  Once he is connected, we present him several 'types' of activities, and ask him to give a grade out of 5 for each of those types. 
+  
+  ![image](https://user-images.githubusercontent.com/75729292/144030974-e6b1e24d-e6ac-4e49-aab4-dad8dbadffa0.png)
+  
+  It's good to know that types are sorted and organized in a tree, starting with main types (such as 'Visit' or 'Catering') in which there are more focused types (such as 'museums', then 'historical', etc.). You can see those trees just here: 
   
   <img width="487" alt="visits" src="https://user-images.githubusercontent.com/75729292/144012671-d5b21fb1-90de-4b77-8bfc-e6d1b631a6e8.PNG">
   <img width="416" alt="Catering" src="https://user-images.githubusercontent.com/75729292/144012713-67942d0d-8974-4f18-83f3-2eb30173df48.PNG">
@@ -109,6 +117,9 @@ At the end we have 763 establishments of 20 different types associated with an i
 In order to simplify and save time for the user, we don't ask him to give a grade to a type if he gave a bad one to the 'parent' category.
 
 When he has graded all the types, we will show him the first activity we think he will like, and propose several options for each activity: to like or dislike the activity (after he did it or if he already did it on a previous trip), to see the next one, to come back to the last one, and finally, to recalculate everything, considering the activities he just liked or disliked.
+
+![image](https://user-images.githubusercontent.com/75729292/144031198-2206c400-5c62-430e-ba90-15445c55c73a.png)
+
 
 That's it for our first version! Of course, we plan to go further after this semester, but we really focused on the algorithms and databases, to have a strong base for the future of PERIPLE.
 
