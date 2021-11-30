@@ -25,9 +25,24 @@ We're sorry if it isn't clear, we'll be really happy to discuss it with you.
 
 ## I- Introduction
   ###### 1. Motivation
-  Periple is an idea of a startup we want to create. ...
-  ###### 2. Purpose
 
+PERIPLE is a start-up idea that came to us when we were brainstorming on a topic for the AI and applications project. While we were exchanging on current innovative projects, we imagined a service to create a user-tailored tourism program. 
+At the beginning of this semester in South Korea, such a tool would have proven to be greatly useful in order to optimize our tour days and to assist us in planning. Of course, effective tools are already established in the tourism market but we are thinking bigger. Moreover, we are convinced that artificial intelligence can revolutionize, or at least improve, the functioning of existing services. 
+
+
+
+  ###### 2. Purpose
+The idea is the following: to develop an artificial intelligence solution to predict what a tourist who wants to furnish his stay will like, and this from the analysis of a database, upstream. The intelligent algorithm would feed on three factors to propose a suitable activity program:
+- The general opinions already existing on the activities
+- Its opinion on what it has liked or disliked
+- The coherence of the proposed program (in terms of distance between each activity, price, etc.)
+But we are thinking bigger, and we even plan to develop a real powerful application, based on this famous algorithm, which would include the best of the market (visuals, functionalities, ergonomics) and possibly other essential functionalities (ticketing, GPS navigation, etc.).
+Concretely, here is how we imagine a classic use of our application:
+1.	The user launches the application and logs in/registers with his login and password;
+2.	A quick questionnaire is launched on the kind of activities he is interested in (rather museums, monuments, nightlife, gourmet restaurant, fast food, etc.) and that he rates from 1 to 5 stars;
+3.	Once the user's profile has been defined, he or she is offered a list of activities that he or she might enjoy.
+4.	Once the user has gone to an activity, the application proposes to the user to click on Like/Dislike, which will further enhance the algorithm and propose more and more suitable activities.
+You will find through our blog the totality of our steps and the whole explicitation of various realizations from the obtaining and the modification of the database, the elaboration of the processing/prediction algorithm to the programming of a prototype interface. We wish you an excellent reading, up to our excitement for our project and we apologize in advance if some misunderstandings remain because of a sometimes imperfect mastery of the English language.
 ## II- Datasets
   
 introduction: 
