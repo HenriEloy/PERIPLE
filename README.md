@@ -42,3 +42,9 @@ We're sorry if it isn't clear, we'll be really happy to discuss it with you.
   ###### Tools, library or doc for this project
 
 ## VI- Conclusion/Discussion
+
+To sum up this project, we have managed to operate in a structured way. We relied on tools such as communication tools, file sharing and task planning.  
+We divided the tasks between us but all our work was linked, whether it is the algorithmic part, creation/finding of datasets, hosting thoses data, create a little graphic interface or analyse the data. 
+
+And as said before, we intend to go further. We really want to pursue this project with the idea of making a startup.    
+That's why we also worked on the development and not only the algorithmic part. We would be happy to have your feedback and we will continue to work hard on this project.   When we will return to France, we intend to take the necessary steps to create the company and also to get information from startup incubators, especially in our school which proposes some.
