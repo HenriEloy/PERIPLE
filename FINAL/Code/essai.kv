@@ -1,0 +1,540 @@
+WindowManager:
+    WelcomeWindow:
+    LoginWindow:
+    RegisterWindow:
+    StartWindow:
+    ChoiceWindow:
+    ResultWindow:
+    ShowResultWindow:
+    Recalculate:
+
+<WelcomeWindow>
+    name: "Welcome"
+    
+    Screen:  
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+            
+        
+        MDCard:
+            size_hint: None, None
+            size: 250, 250
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 25
+            orientation: 'vertical'
+            
+            MDLabel:
+                text: "Welcome to PERIPLE"
+                font_size: 25
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+                color: "#53a2ff"
+           
+            MDRoundFlatButton:
+                text: "LOG IN"
+                font_size: 12
+                pos_hint: {"center_x": 0.5, "center_y": 0.54}
+                on_release: 
+                    app.root.current = "login"
+                    root.manager.transition.direction = "down"
+    
+            MDRoundFlatButton:
+                text: "REGISTER"
+                font_size: 12
+                pos_hint: {"center_x": 0.5, "center_y": 0.46} 
+                on_release:   
+                    app.root.current = "register"
+                    root.manager.transition.direction = "up"         
+    
+<LoginWindow>
+    name: "login"
+    
+    user:user
+    password:password
+    message:message
+        
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300, 400
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 25
+            orientation: 'vertical'
+    
+            MDLabel:
+                id: message
+                text: "LOG IN"
+                font_size: 25
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+                color: "#53a2ff"
+    
+            MDTextFieldRound:
+                id: user
+                hint_text: "pseudo"
+                icon_right: "account"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+    
+            MDTextFieldRound:
+                id: password
+                hint_text: "password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+                password: True
+    
+            MDRoundFlatButton:
+                text: "LOG IN"
+                font_size: 12
+                pos_hint: {"center_x": 0.5}
+                on_release:
+                    app.root.current = "start" if root.try_login()==True else "login"
+                    root.manager.transition.direction = "up" 
+    
+            MDRoundFlatButton:
+                text: "No account"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "register"
+                    root.manager.transition.direction = "up"          
+    
+            Widget:
+                size_hint_y: None
+                height: 10
+
+
+<RegisterWindow>
+    name: "register"
+    
+    email:email
+    pseudo:pseudo
+    password:password
+    password2:password2
+    message:message
+        
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300, 500
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 25
+            orientation: 'vertical'
+    
+            MDLabel:
+                id: message
+                text: "REGISTER"
+                font_size: 25
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+                color: "#53a2ff"
+                
+            MDTextFieldRound:
+                id: email
+                hint_text: "e-mail"
+                icon_right: "email"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+                email: True
+    
+            MDTextFieldRound:
+                id: pseudo
+                hint_text: "pseudo"
+                icon_right: "account"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+    
+            MDTextFieldRound:
+                id: password
+                hint_text: "password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+                password: True
+                
+            MDTextFieldRound:
+                id: password2
+                hint_text: "confirm password"
+                icon_right: "eye-off"
+                size_hint_x: None
+                width: 200
+                font_size: 18
+                pos_hint: {"center_x": 0.5}
+                password: True
+    
+            MDRoundFlatButton:
+                text: "REGISTER"
+                font_size: 12
+                pos_hint: {"center_x": 0.5}
+                on_release:
+                    app.root.current = "login" if root.try_register()==True else "register"
+    
+            MDRoundFlatButton:
+                text: "Already registered"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "login"
+                    root.manager.transition.direction = "down"         
+    
+            Widget:
+                size_hint_y: None
+                height: 10
+                
+<StartWindow>
+    name:"start"
+    
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300, 250
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 15
+            orientation: 'vertical'
+    
+            MDLabel:
+                text: "You will tell us how interested you are in the following types of activities ?"
+                font_size: 25
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 5
+                color: "#53a2ff"
+            
+            MDRoundFlatButton:
+                text: "Let's go !"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "choice"
+                    root.manager.transition.direction = "up"
+                
+                
+<ChoiceWindow>
+    name: "choice"
+    questionName:questionName
+    resulttype:resulttype
+    
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300, 260
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 10
+            orientation: 'vertical'
+            
+            MDLabel:
+                id: resulttype
+                text: ""
+                font_size: 25
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                color: "#53a2ff"
+                opacity: 0.8
+                
+            MDLabel:
+                id: questionName
+                text: "Visit"
+                font_size: 35
+                bold: True
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 15
+                color: "#53a2ff"
+                
+            BoxLayout:
+                size_hint_y: None
+                spacing: 7
+                height: 50
+                orientation:'horizontal'
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+                
+            
+                MDRoundFlatButton:
+                    text: "0"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release: 
+                        app.root.current = "result" if root.click0()==True else "choice"
+        
+                MDRoundFlatButton:
+                    text: "1"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release:
+                        app.root.current = "result" if root.click1()==True else "choice"
+                    
+                MDRoundFlatButton:
+                    text: "2"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release:
+                        app.root.current = "result" if root.click2()==True else "choice"
+                    
+                MDRoundFlatButton:
+                    text: "3"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release:
+                        app.root.current = "result" if root.click3()==True else "choice"
+                    
+                MDRoundFlatButton:
+                    text: "4"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release:
+                        app.root.current = "result" if root.click4()==True else "choice"
+                    
+                MDRoundFlatButton:
+                    text: "5"
+                    font_size: 12
+                    pos_hint: {"center_x": 0.5}
+                    size: (min(self.width,self.height),min(self.width,self.height))
+                    on_release:
+                        app.root.current = "result" if root.click5()==True else "choice"
+    
+            Widget:
+                size_hint_y: None
+                height: 10
+                
+<ResultWindow>
+    name:"result"
+    
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300, 150
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 15
+            orientation: 'vertical'
+    
+            MDLabel:
+                text: "Well done !"
+                font_size: 35
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 5
+                color: "#53a2ff"
+            
+            MDRoundFlatButton:
+                text: "See my results"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "showresult"
+                    root.manager.transition.direction = "up"
+
+<ShowResultWindow>
+    name:"showresult"
+    resultype:resulttype
+    resultname:resultname
+    resultimage:resultimage
+    
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300,600
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 15
+            orientation: 'vertical'
+            
+            Image:
+                id: resultimage
+                pos: self.parent.pos
+                size: self.parent.size
+                source: "data:image/png;base64,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"
+                
+            MDLabel:
+                id: resulttype
+                text: "loading..."
+                font_size: 15
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 5
+                color: "#53a2ff"
+                opacity: 0.8
+                    
+            MDLabel:
+                id: resultname
+                text: "loading..."
+                font_size: 30
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                color: "#53a2ff"
+                
+            BoxLayout:
+                orientation: 'horizontal'
+                spacing : 6
+                padding: 65
+                valign: 'bottom'
+
+                MDIconButton:
+                    icon: "thumb-up"
+                    user_font_size: "33sp"
+                    on_release: 
+                        root.liked()
+                    
+                MDIconButton:
+                    icon: "thumb-down"
+                    user_font_size: "33sp"
+                    on_release:
+                        root.disliked()
+                
+            BoxLayout:
+                orientation: 'horizontal'
+                padding: 47
+
+                MDIconButton:
+                    icon: "arrow-left-box"
+                    pos: self.parent.pos
+                    user_font_size: "58sp"
+                    on_release:
+                        root.previousInfo()
+                    
+                MDIconButton:
+                    icon: "arrow-right-box"
+                    pos: self.parent.pos
+                    user_font_size: "58sp"
+                    on_release: 
+                        root.nextInfo()
+            
+            MDRoundFlatButton:
+                text: "Recalculate"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "recalculate"
+                    root.manager.transition.direction = "up"
+
+<Recalculate>
+    name: 'recalculate'
+    
+    Screen:
+    
+        Image:
+            source: "../images/squares.jpg"
+            size: self.texture_size
+            size_hint_x: None
+            size_hint_y: None
+    
+        MDCard:
+            size_hint: None, None
+            size: 300,200
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            elevation: 10
+            padding: 25
+            spacing: 15
+            orientation: 'vertical'
+            
+            MDLabel:
+                text: "Are you sure ?"
+                font_size: 35
+                halign: 'center'
+                size_hint_y: None
+                height: self.texture_size[1]
+                padding_y: 5
+                color: "#53a2ff"
+            
+            MDRoundFlatButton:
+                text: "Yes, recalculate"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release:
+                    root.recalculate()
+                    app.root.current = "showresult"
+                    root.manager.transition.direction = "down"
+                    
+            MDRoundFlatButton:
+                text: "No, go back"
+                font_size: 12
+                pos_hint: {"center_x": 0.5} 
+                on_release: 
+                    app.root.current = "showresult"
+                    root.manager.transition.direction = "down"
