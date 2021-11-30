@@ -160,6 +160,11 @@ It means, the more the user uses the application, the more it will be adapted to
 This grade has a coefficient of 0.4
 
 We now have 5 different grades, and it’s easy for us to know what the perfect activity for him will be!
+#### 6-	Machine learning to compare
+The method that we use is not the machine learning saw in class so we try to use machine learning to compare with our results. 
+Random forest 
+First of all to use a random forest we had to convert our data to only numbers. We made it thanks to this code.
+secondly we put randomly liked activities to the dataframe. Then we train this data to make some prevision. At the end we put some activities the user liked, the algorithm predicts which activities the user will like after thanks to this code. 
 
 
 ## IV- Evaluation and Analysis
