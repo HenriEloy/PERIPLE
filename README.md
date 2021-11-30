@@ -86,7 +86,7 @@ For each “types ligne” we will make a request. However, at the end 20 establ
 
 
 Part 3: Code 
-We took 80 establishments for 20 “type lines” and delete duplicates. thanks to this code[Caption]: https://github.com/HenriEloy/PERIPLE/blob/8fc87fc18f8c55d24b6eea87df7c2bb683b16426/DataBases/builtdata.py.
+We took 80 establishments for 20 “type lines” and delete duplicates. thanks to this code [Caption](https://github.com/HenriEloy/PERIPLE/blob/8fc87fc18f8c55d24b6eea87df7c2bb683b16426/DataBases/builtdata.py).
 
 ![datafin](https://user-images.githubusercontent.com/92365536/144018095-d6d496ad-da2b-48f1-9827-83b7569434d1.PNG)
 
