@@ -94,8 +94,72 @@ At the end we have 763 establishments of 20 different types associated with an i
 
 
 ## III- Methodology
-  ###### 1. Explication of our algorithms
-  ###### 2. Explication of features or code
+
+  To achieve this personal list of activities, we will use the data collected with google API (as we explained earlier), but we also obviously need data from the user.
+  I will start by describing what a lambda user will see when opening our IA app, and then explain how we computed everything to find the perfect activities for him.
+  
+  First, we ask the user to create an account because we want to save some data that he will give us and use it only for this person.
+  Once he is connected, we present him several 'types' of activities, and ask him to give a grade out of 5 for each of those types. It's good to know that types are sorted and organized in a tree, starting with main types (such as 'Visit' or 'Catering') in which there are more focused types (such as 'museums', then 'historical', etc.). You can see those trees just here: 
+  
+  <img width="487" alt="visits" src="https://user-images.githubusercontent.com/75729292/144012671-d5b21fb1-90de-4b77-8bfc-e6d1b631a6e8.PNG">
+  <img width="416" alt="Catering" src="https://user-images.githubusercontent.com/75729292/144012713-67942d0d-8974-4f18-83f3-2eb30173df48.PNG">
+  <img width="419" alt="Activity" src="https://user-images.githubusercontent.com/75729292/144012737-21c5e2ac-2180-4c76-b1d7-53f6b548e7ca.PNG">
+  <img width="339" alt="Nightlife" src="https://user-images.githubusercontent.com/75729292/144012790-51f8ad62-2c31-44ad-a226-785f6fd76b0b.PNG">
+
+In order to simplify and save time for the user, we don't ask him to give a grade to a type if he gave a bad one to the 'parent' category.
+
+When he has graded all the types, we will show him the first activity we think he will like, and propose several options for each activity: to like or dislike the activity (after he did it or if he already did it on a previous trip), to see the next one, to come back to the last one, and finally, to recalculate everything, considering the activities he just liked or disliked.
+
+That's it for our first version! Of course, we plan to go further after this semester, but we really focused on the algorithms and databases, to have a strong base for the future of PERIPLE.
+
+Now, we must explain how we compute all our data, without using any of the known IA and machine learning models.
+
+First, we have the database created with google API, we have 763 activities in Paris, and a lot of information about them. But for now, we just use several information: the name, the google grade (out of 5), the number of voters (for that google grade) and the three types for each activity 
+Case in point: for the Louvre Museum, we get from google a grade of 4.7/5, with 223394 voters and the three types: Visit – Museum – Historical
+(We will also use the image of each activity for the display at the end, but it’s useless for our algorithms)
+To store our data, we are computing an average grade, calculated with 5 grades (we can easily change the coefficients of each of those grades to get the mode accurate prediction possible).
+1-	“Google grade”
+Not a lot of things to say about this one, it’s just the grade given by hundreds of google users, we have it on the database built previously with google API. (Example: 4.7/5 for Louvre Museum)
+This grade has a coefficient of 0.8
+
+2-	“Voters grade”
+In order to separate the activities, and to favorize the most known (a 4.7 with 20 000 votes is more important than a 4.8 with 3 votes)
+For that, we used a logarithmic scale (between 0 and 10 voters, the grade is between 0 and 1, between 11 and 100 voters, the grade is between 1 and 2, between 101 and 1000 voters, the grade is between 2 and 3, etc.). Because very few activities have a lot of voters, and it was impossible to compute it normally (a few good and a lot of small grades).
+For example, with 223394 voters, Louvre Museum obviously gets a 5/5
+This grade has a coefficient of 0.2
+
+3-	“Machine learning grade”
+
+Do you remember when we propose to the user to like or dislike an activity he has done ? When he does that, his opinion is used two times, and the first is right here. 
+We save in a database all the opinions from the users, and, we created a program considering all the binary decisions and computing a grade out of 5 for each activity. We compute using an easy method, every activity is noted in relation to the more and the less liked one. So, the one with the more likes gets a 5 and the one with the more dislikes gets a 0. And all other ones are between them.
+If this application were used by a lot of people, this machine learning could help us have our own grades for each activity, grades given by our users and not by all the users from internet.
+For now, we obviously don’t have enough users to give this grade a real impact on the final grade, so the coefficient is for now 0.01
+
+
+
+
+4-	“Choices grade”
+As you can see, the three grades we already gave for each activity do not consider the choices or activities our logged user choose. They are the same for every user (the 3rd one can be changed by every user, for every user).
+
+This 4th grade, is based on the preferences the logged user gave us. He gave, for each type, a grade out of 5. We just have to make an average of each grade for each activity with those types!
+For example: if the user gave 3 to “Visit”, 5 to “Museum” and 4 to “Historical”, the Louvre Museum will get a “choice grade” of 4/5
+
+That way, the choices of the user are considered. And the coefficient is 1 (the best one because we really want the user to visit things he really wants).
+
+If it’s the first time the program computes the perfect activities for a user, we stop here, and make an average of those 4 grades with associated coefficients. We can then easily sort by the final grade which is the best activity for our user!
+
+5-	The “Already Done grade”
+
+This last grade is very important. As we said, when the user like, or dislike an activity (which means he did it), a second thing appends: we will save the id of the activity, to be sure not to propose him this activity again, and we will improve (or lower) the 5th grade of all activities sharing one, two or three types with the activity already done!
+Of course, the more types there are in common, the more the grade will be changed!
+
+We do that so when the user wants to visit again Paris (or any other city we will add after), or when he asks us to recalculate, we can consider what he already liked or disliked. 
+It means, the more the user uses the application, the more it will be adapted to what he likes.
+
+This grade has a coefficient of 0.4
+
+We now have 5 different grades, and it’s easy for us to know what the perfect activity for him will be!
+
 
 ## IV- Evaluation and Analysis
   ###### Graphs, Tables or statistics
