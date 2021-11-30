@@ -29,7 +29,55 @@ We're sorry if it isn't clear, we'll be really happy to discuss it with you.
   ###### 2. Purpose
 
 ## II- Datasets
-  ###### Describtion
+  Periple DataFrame
+introduction: 
+As we needed specific information which was not already on a dataframe, we had to build it. 
+First of all we built a template dataframe looks like that:
+
+
+ 
+Part 1: Google Rating
+
+Our two most important variables are the name and de rating associated. We had two choices: google rating or trip advisor rating. As google API are more accessible we choose Google: 
+
+
+How to take this information for a lot of establishments? 
+As we saw in the introduction template we need some types to define the places:
+
+
+catering gastronomic local
+catering gastronomic global
+catering casual local
+catering casual global
+catering fastfood
+catering original
+activity sport practice
+activity sport watch
+activity fun
+activity relaxation
+activity show cinema
+activity show theater
+nightlife club
+nightlife bar
+visit museum historical
+visit museum modern 
+visit monument exterior
+visit monument interior
+
+visit walk nature
+visit walk urban
+  
+Part 2: Google Place API
+
+Nearby fonction: a google api function which takes 20 locations near gps coordinate in a ray and related to Keywords. 
+For each “types ligne” we will make a request. However, at the end 20 establishments for one line is not enough. so we split in 4 smaller rays: 
+
+Part 3: Code 
+We took 80 establishments for 20 “type lines” and delete duplicates. thanks to this code.
+
+
+At the end we have 763 establishments of 20 different types associated with an image.
+
 
 ## III- Methodology
   ###### 1. Explication of our algorithms
