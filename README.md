@@ -184,7 +184,8 @@ secondly we put randomly liked activities to the dataframe. Then we train this d
 
 
 ## V- Related Work
-  ###### Tools, library or doc for this project
+  To achieve this project, we used several pandas libraries :
+  Pandas to work on our data, using pandas dataframes, Kivy and KivyMD to create a very simple graphic interface, we also added a little library named "re" which allow us to verify if the email given by the user is a real one (when registering). All our data is stored in csv files locally created, but we started to use a server to host them online. But this is really difficult to do it and modify our data afterwards, it's why we kept our data in local folders at least until we finish calibrating our machine learning.
 
 ## VI- Conclusion/Discussion
 
