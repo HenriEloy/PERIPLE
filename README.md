@@ -57,26 +57,26 @@ Our two most important variables are the name and de rating associated. We had t
 How to take this information for a lot of establishments? 
 As we saw in the introduction template we need some types to define the places:
 
-catering gastronomic local
-catering gastronomic global
-catering casual local
-catering casual global
-catering fastfood
-catering original
-activity sport practice
-activity sport watch
-activity fun
-activity relaxation
-activity show cinema
-activity show theater
-nightlife club
-nightlife bar
-visit museum historical
-visit museum modern 
-visit monument exterior
-visit monument interior
-visit walk nature
-visit walk urban
+catering gastronomic local;
+catering gastronomic global;
+catering casual local;
+catering casual global;
+catering fastfood;
+catering original;
+activity sport practice;
+activity sport watch;
+activity fun;
+activity relaxation;
+activity show cinema;
+activity show theater;
+nightlife club;
+nightlife bar;
+visit museum historical;
+visit museum modern ;
+visit monument exterior;
+visit monument interior;
+visit walk nature;
+visit walk urban;
   
 Part 2: Google Place API
 
