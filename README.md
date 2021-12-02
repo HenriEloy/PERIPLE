@@ -180,6 +180,8 @@ secondly we put randomly liked activities to the dataframe. Then we train this d
 
 ## IV- Evaluation and Analysis
   ###### Graphs, Tables or statistics
+  [Data_Analysis_PERIPLE-2.pdf](https://github.com/HenriEloy/PERIPLE/files/7639104/Data_Analysis_PERIPLE-2.pdf)
+
 
 ## V- Related Work
   ###### Tools, library or doc for this project
