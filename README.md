@@ -180,7 +180,13 @@ secondly we put randomly liked activities to the dataframe. Then we train this d
 
 ## IV- Evaluation and Analysis
   ###### Graphs, Tables or statistics
-  [Data_Analysis_PERIPLE-2.pdf](https://github.com/HenriEloy/PERIPLE/files/7639104/Data_Analysis_PERIPLE-2.pdf)
+  To analyse our Data base we have use Python programming language (Jupyter Notebook).
+  We used differents softwares like Numpy and Pandas for the data manipulation and result interpretation.
+  The result we have found allowed us to have a better understanding of ou Data.
+  Therefor those result will help us to creat an algorithm more accurate ans more precise.
+  
+  Here you can find our study: 
+![Data_Analysis_PERIPLE (2)-1](https://user-images.githubusercontent.com/77446119/144384141-14875490-5513-476a-9c53-210bf6e7cea7.png)
 
 
 ## V- Related Work
