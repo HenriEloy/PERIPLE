@@ -177,7 +177,7 @@ We now have 5 different grades, and it’s easy for us to know what the perfect 
 The method that we use is not the machine learning saw in class so we try to use machine learning to compare with our results. 
 Random forest 
 First of all to use a random forest we had to convert our data to only numbers. We made it thanks to this [code](https://github.com/HenriEloy/PERIPLE/blob/86d979d8285521e001fe033992f87054aa2ab5c2/Python%20Source%20Code/prediction%20data%20builder.py).
-secondly we put randomly liked activities to the dataframe. Then we train this data to make some prevision. At the end we put some activities the user liked, the algorithm predicts which activities the user will like after thanks to this [code](https://github.com/HenriEloy/PERIPLE/blob/4c3c8b02f1043e9858a6266e12213ca580d03b75/Python%20Source%20Code/random%20forest%20prediction.py). 
+secondly we put randomly liked activities to the dataframe. Then we train this data to make some prevision. At the end we put some activities the user liked, the algorithm predicts which activities the user will like after thanks to this [code](https://github.com/HenriEloy/PERIPLE/blob/fbad0bb3c12c68ecfbe0cd62cc05c65473acb0b1/FINAL/Code/random%20forest%20prediction%20-%20Copy.py). 
 
 
 ## IV- Evaluation and Analysis
