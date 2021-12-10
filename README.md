@@ -130,7 +130,7 @@ Now, we must explain how we compute all our data, without using any of the known
 First, we have the database created with google API, we have 763 activities in Paris, and a lot of information about them. But for now, we just use several information: the name, the google grade (out of 5), the number of voters (for that google grade) and the three types for each activity 
 Case in point: for the Louvre Museum, we get from google a grade of 4.7/5, with 223394 voters and the three types: Visit – Museum – Historical
 (We will also use the image of each activity for the display at the end, but it’s useless for our algorithms)
-To store our data, we are computing an average grade, calculated with 5 grades (we can easily change the coefficients of each of those grades to get the mode accurate prediction possible).
+To store our data, we are computing an average grade, calculated with 5 grades (we can easily change the coefficients of each of those grades to get the more accurate prediction possible).
 
 #### 1-	“Google grade”
 
@@ -144,7 +144,7 @@ For that, we used a logarithmic scale (between 0 and 10 voters, the grade is bet
 For example, with 223394 voters, Louvre Museum obviously gets a 5/5
 This grade has a coefficient of 0.2
 
-#### 3-	“Machine learning grade”
+#### 3-	“Users grade”
 
   Do you remember when we propose to the user to like or dislike an activity he has done ? When he does that, his opinion is used two times, and the first is right here. 
 We save in a database all the opinions from the users, and, we created a program considering all the binary decisions and computing a grade out of 5 for each activity. We compute using an easy method, every activity is noted in relation to the more and the less liked one. So, the one with the more likes gets a 5 and the one with the more dislikes gets a 0. And all other ones are between them.
