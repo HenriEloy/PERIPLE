@@ -38,7 +38,7 @@ X= df.drop(labels=['like'],axis =1)
 
 
 X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size =0.75,random_state=0)
-model = RandomForestClassifier(n_estimators= 2,random_state=0)
+model = RandomForestClassifier(n_estimators= 20,random_state=0)
 model.fit(X_train, Y_train)
 prediction_test = model.predict(X_test)
 
